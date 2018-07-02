@@ -10,10 +10,10 @@ This tool is for the publication of "lncRNATargets: A platform for lncRNA target
 python rnatarget.py -t  37  -s [subject_file.fa/.txt/.fasta] -q [query_file.fa/.txt/.fasta] -g -0.05
 ```
 
+-s : the Subject sequences file (Required);<br>
+-q : the Query sequences file (Required);<br>
 -t : the Temperature value in degree Celsius (Default: 37);<br>
--s : the Subject sequences file;<br>
--q : the Query sequences file;<br>
--g : the threshold value for deltaG/n ; <br>
+-g : the threshold value for deltaG/n (Default: -0.05); <br>
 
 
 If this tool can have any help for you, please cite
