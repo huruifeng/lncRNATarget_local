@@ -1,0 +1,73 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>RNATargets</title>
+<link href="js_css/styles.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js_css/jquery.js"></script>
+</head>
+<body>
+<!-- begin #container -->
+<div id="container">
+	<!-- begin #header -->
+    <div id="header" style="float:left;">
+    	<div class="logoContainer">
+        	<div><img src="images/logo.png" alt="" /></div>
+        </div>
+        <div class="menu" style="margin-top:25px; margin-right:200px;">
+        	<ul>
+            	<li id="active"><a href="#">RESULT</a></li>
+            </ul>	
+        </div>
+    </div>
+    <!-- end #header -->
+    <div class="boxes">
+        <div class="horSeparator"></div>
+        <div class="query_subject" style="width:100%;">
+        	 <div id="query" class="section">   
+               <fieldset>
+                  <legend>Results</legend>
+                  <div id="job_display">
+                  	<div id="job_title" style="font-size:20px; font-family:'Arial Black', Gadget, sans-serif;">Job Title: <?php echo $title; ?></div>
+                    <div id="show_result">
+                    	<div id="percent" ><div id="percet_sub" style="width: 90%;"></div><span id="percent_txt">Complete...100%</span></div>
+                    </div>
+                    <!--RESULT TABLE-->
+                  </div>
+               </fieldset>   
+			   <div style="font-size:16px; font-family:'Arial', Gadget, sans-serif; margin:5px 0px;"><a href="output/result.txt">Download File</a></div>
+            </div>
+			
+        </div>
+    </div>
+    <script type="text/javascript">
+		function ex_cla(val_id){
+			obj_names = document.getElementsByName(val_id);
+			i = 0;
+			l = obj_names.length;
+			while(i < l){
+				if(obj_names[i].style.display==''){
+					obj_names[i].style.display = "none";
+				}
+				else{
+					obj_names[i].style.display='';
+				}
+				i = i + 1;
+			}
+			
+		}
+    </script>
+    <!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats --><br class="clearfloat" />
+    <!-- begin #footer -->
+    <div class="horSeparator"></div>
+    <div id="footer">
+		<p>
+            <div style="float:right; margin-right:100px; margin-top:20px;margin-bottom:30px;"><label>IMPLAD Copyright © All Rights Reserved.</label><br><label><a href="mailto:huruifeng.cn@hotmail.com">E-mail：huruifeng.cn@hotmail.com</label></a></div>
+        </p>
+	</div>
+    <!-- end #footer -->
+</div>
+<!-- end #container -->
+</body>
+</html>
