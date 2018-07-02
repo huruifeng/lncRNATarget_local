@@ -3,9 +3,9 @@
 
 This tool is for the publication of "lncRNATargets: A platform for lncRNA target prediction based on nucleic acid thermodynamics."
 
-##Due to the instable of the server, I bulid this local-run version.
+## Due to the instable of the server, I bulid this local-run version.
 
-#Usage:
+# Usage:
 
 ```bash
 python rnatarget.py -t  37  -s [subject_file.fa/.txt/.fasta] -q [query_file.fa/.txt/.fasta] -g -0.05
