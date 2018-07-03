@@ -128,7 +128,7 @@ def RNA_Target(Dir, RNAfile, mRNAfile, deltaG, align, outFile, Tempera):
                 y = Calculate_G(Dir,lnc_name, lncRNAs[lnc_name], m_name, mRNAs[m_name], deltaG, isPic, outFile, Tempa)
                 now_num = now_num + 1
                 percent = round(float(float(now_num)/float(sum_num)), 2)*100.00
-                print percent
+                print("%s" % (percent))
             else:
                 break
     line_num = 0
